@@ -4,6 +4,7 @@ import com.nva.inventoryservice.dtos.InventoryResponse;
 import com.nva.inventoryservice.repositories.InventoryRepository;
 import com.nva.inventoryservice.services.InventoryService;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -11,6 +12,7 @@ import java.util.List;
 
 @Service
 @RequiredArgsConstructor
+@Slf4j
 public class InventoryServiceImpl implements InventoryService {
     private final InventoryRepository inventoryRepository;
 
